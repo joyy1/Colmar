@@ -1,0 +1,101 @@
+html{
+  font-size: 16px;
+}
+
+body{
+  height: auto;
+  font-family:
+}
+
+.container{
+  max-width: 960px;
+
+}
+
+/* this is for header section */
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width:100%
+  background-color:rgba(30, 18, 22, 0.5);
+
+}
+
+.headline .logo span{
+  color: rgba(236, 236, 236, 1.0);
+  font-family: Source Serif Pro;
+}
+
+.headline .login{
+  background-color: : rgba(236, 236, 236, 1.0);
+  color: rgba(30, 18, 22);
+  font-weight: normal;
+  border-radius: 0.4;
+  border: 1px solid beige;
+}
+.headline .login span:hover {
+  background-color: rgba(236, 236, 236, 1.0);
+}
+
+/* main section */
+.main{
+  background-image: url(./joyzh/desktop/Colmar/resources/images/main.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main .container{
+  display:
+  background-color: rgba(212, 210, 166, 0.4);
+  display: flex;
+}
+
+.main .container nav{
+  width:100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(204, 159, 166, 1.0);
+
+}
+
+ul{
+  display: inline-flex;
+
+
+
+}
+
+.main .container nav ul li{
+  color: rgb(0,0,0)
+  font-family: source serif pro; Helvatica;
+  font-size: 1.5rem;
+}
+
+
+/* banner section */
+
+.banner
+{
+  bacground-image: url(./joyzh/desktop/Colmar/resources/images/banner.jpg);
+  height: 10rem;
+  width: auto;
+}
+
+
+
+
+
+
+
+/* video section */
+
+
+
+
+
+/* footer section*/
