@@ -5,24 +5,34 @@ html{
 body{
   height: auto;
   font-family:
+  margin: 0 auto;
 }
 
 .container{
-  max-width: 960px;
+  width: cover;
+  align-self: flex-start;
+
 
 }
 
 /* this is for header section */
 
-.headline .container{
-  display: flex;
-  justify-content: space-around;
+header {
+  width: cover;
+  background-color: rgba(30, 18, 22, 0.5);
+  display: block;
+}
+
+
+  .headline {
+    display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   flex-direction: column;
-  height: 4rem;
   width: cover;
-  background-color:rgba(30, 18, 22, 0.5);
+  height:4rem;
+  margin: 0 auto;
 
 }
 
@@ -31,13 +41,14 @@ body{
   justify-content: flex-start;
   align-items: center;
   width: auto;
+  float: right;
 
 }
 
 .headline .logo img{
   padding-left: 1.5rem
   height: 1.5rem;
-  width:
+
 
 }
 
@@ -75,11 +86,11 @@ body{
     flex-direction: column;
   }
 
-  .headline .iclogin img{
+  .headline .sign img{
     display: inline;
   }
 
-.headline .iclogin span{
+.headline .sign span{
   background-color: rgba(236, 236, 236, 1.0);
   width: 4rem
   color: rgba(30, 18, 22);
@@ -94,6 +105,25 @@ body{
 
 .headline .login span:hover {
   background-color: rgba(236, 236, 236, 1.0);
+}
+
+/* banner section */
+
+.banner{
+
+  background-color: beige;
+  height: 30rem;
+  width: cover;
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+}
+.banner img{
+  display: block;
+  position: static;
+  width: 60%;
+  height: 25rem;
+
 }
 
 /* main section */
@@ -132,15 +162,6 @@ ul{
   font-size: 1.5rem;
 }
 
-
-/* banner section */
-
-.banner{
-
-  background-image: url("./Users/JOYZH/Colmar/resources/images/banner.jpg");
-  height: 10rem;
-  width: auto;
-}
 
 
 
