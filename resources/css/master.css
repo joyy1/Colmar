@@ -42,7 +42,7 @@ header{
 
 /* main section */
 .main{
-  background-image: url(./joyzh/desktop/Colmar/resources/images/main.jpg);
+  background-image: url(../information-main.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -79,9 +79,9 @@ ul{
 
 /* banner section */
 
-.banner
-{
-  bacground-image: url(./joyzh/desktop/Colmar/resources/images/banner.jpg);
+.banner{
+
+  background-image: url("./Users/JOYZH/Colmar1/resources/images/banner.jpg");
   height: 10rem;
   width: auto;
 }
