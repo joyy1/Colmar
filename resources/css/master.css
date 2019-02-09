@@ -14,35 +14,91 @@ body{
 
 /* this is for header section */
 
-header{
+.headline .container{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
   flex-direction: column;
-  width:100%
+  height: 4rem;
+  width: cover;
   background-color:rgba(30, 18, 22, 0.5);
 
 }
 
-.headline .logo span{
-  color: rgba(236, 236, 236, 1.0);
-  font-family: Source Serif Pro;
+.headline .logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+
 }
 
-.headline .login{
-  background-color: : rgba(236, 236, 236, 1.0);
+.headline .logo img{
+  padding-left: 1.5rem
+  height: 1.5rem;
+  width:
+
+}
+
+.headline .logo span{
+  display: inline;
+  color: rgba(236, 236, 236, 1.0);
+  font-family: Source Serif Pro, Helvatica;
+  font-size: 2rem;
+
+}
+
+.headline .navigation{
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  }
+
+  .headline .navigation nav ul{
+    display: flex;
+    padding-right: 2rem;
+  }
+
+  .headline .navigation nav ul li{
+    list-style-type: none;
+    color: white;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .headline .sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .headline .iclogin img{
+    display: inline;
+  }
+
+.headline .iclogin span{
+  background-color: rgba(236, 236, 236, 1.0);
+  width: 4rem
   color: rgba(30, 18, 22);
   font-weight: normal;
   border-radius: 0.4;
   border: 1px solid beige;
+  font-size: 2rem;
+  line-height: 1.2;
 }
+
+
+
 .headline .login span:hover {
   background-color: rgba(236, 236, 236, 1.0);
 }
 
 /* main section */
 .main{
-  background-image: url(../information-main.jpg);
+
   background-size: cover;
   background-position: center;
 }
@@ -81,7 +137,7 @@ ul{
 
 .banner{
 
-  background-image: url("./Users/JOYZH/Colmar1/resources/images/banner.jpg");
+  background-image: url("./Users/JOYZH/Colmar/resources/images/banner.jpg");
   height: 10rem;
   width: auto;
 }
