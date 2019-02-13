@@ -4,175 +4,742 @@ html{
 
 body{
   height: auto;
-  font-family:
   margin: 0 auto;
 }
 
-.container{
-  width: cover;
-  align-self: flex-start;
 
+.container{
+  background-size: cover;
+  background-color: rgba(242,240,239,0.8);
+  background-position: center;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 
 }
 
 /* this is for header section */
 
-header {
-  width: cover;
-  background-color: rgba(30, 18, 22, 0.5);
-  display: block;
-}
+.headline{
 
-
-  .headline {
-    display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
-  flex-direction: column;
-  width: cover;
-  height:4rem;
-  margin: 0 auto;
-
-}
-
-.headline .logo{
+  background-color: rgba(137, 121, 93 ,1.0);
+  background-position: center;
+  width: 100%;
+  height: 7rem;
+  margin: auto;
+  position: fixed;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  width: auto;
-  float: right;
 
 }
+
+ .headline .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: auto;
+
+}
+.headline .logo .svg{
+  height: 4rem;
+}
+
 
 .headline .logo img{
-  padding-left: 1.5rem
-  height: 1.5rem;
+  display: flex;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  height: 3rem;
+
 
 
 }
 
 .headline .logo span{
-  display: inline;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   color: rgba(236, 236, 236, 1.0);
   font-family: Source Serif Pro, Helvatica;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  width: auto;
 
 }
 
-.headline .navigation{
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
+
+ }
+
+ .headline  .ways{
+  display: flex;
   width: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  align-self: center;
+
+}
+.headline .ways svg{
+  height: 2.5rem;
+}
+
+
+.headline .ways img {
+    display: inline-flex;
+    padding-bottom: 1rem;
+    height: 3rem;
+
+
+}
+
+  .headline .ways span{
+    display: inline;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    width: 7rem;
+
   }
 
-  .headline .navigation nav ul{
-    display: flex;
-    padding-right: 2rem;
-  }
-
-  .headline .navigation nav ul li{
-    list-style-type: none;
+.headline .ways span a{
     color: white;
-    font-size: 1rem;
-    padding-right: 1rem;
+    font-size: 1.5rem;
   }
 
-  .headline .sign{
+
+
+
+ .headline .sign{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: auto;
+    padding-right: 1.5rem;
+
   }
 
-  .headline .sign img{
-    display: inline;
+   .sign img{
+    display: block;
+    width: auto;
+    height: 2.5rem;
   }
 
-.headline .sign span{
-  background-color: rgba(236, 236, 236, 1.0);
-  width: 4rem
-  color: rgba(30, 18, 22);
+ .sign span{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 15rem;
+  text-align: center;
+  color: rgba(245, 245, 245, 1.0);
   font-weight: normal;
-  border-radius: 0.4;
-  border: 1px solid beige;
+  border-radius: 0.8;
+  border: 1px solid black;
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 
 
-.headline .login span:hover {
-  background-color: rgba(236, 236, 236, 1.0);
+.sign span:hover {
+  color: rgba(195, 178, 76, 1.0);
 }
+
+
+@@media only screen and (max-width: 480px) {
+
+  .headline{
+    height: 64px;
+
+    }
+
+    .headline span{
+      display: none;
+    }
+
+    .headline .logo span{
+      display: none;
+    }
+
+    .ways span{
+      display: none;
+    }
+
+}
+
+
 
 /* banner section */
 
-.banner{
 
+
+.banner {
   background-color: beige;
-  height: 30rem;
-  width: cover;
-  margin-top: 2rem;
-  margin-left: 2rem;
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+flex-wrap: nowrap;
+width: 100%;
+align-self: baseline;
 }
-.banner img{
+
+ .banner .ban {
   display: block;
-  position: static;
-  width: 60%;
-  height: 25rem;
+  margin-top: 9rem;
+  width; 60%;
+}
+
+.banner .ban img{
+  display: block;
+  width: 90%;
+  height: 30rem;
+  padding: 1.5rem;
 
 }
+
+ .banner  .slogan{
+  display: block;
+  text-align: justify;
+  width: 40%;
+  margin-left: 1.5rem;
+
+}
+
+ .banner .slogan h1{
+  text-align: left;
+  font-size: 3rem;
+  color: black;
+  width: auto;
+
+
+}
+
+
+ .banner .slogan p{
+   padding-top: 1.5rem;
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+  font-size: source pro Serif;
+  line-height: 1.8
+
+
+}
+.banner .slogan span {
+  background-color: black;
+  display: block;
+  text-align: center;
+  width: 95%;
+  height: auto;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: source serif pro;
+
+}
+
 
 /* main section */
+
+
+
 .main{
-
-  background-size: cover;
-  background-position: center;
-}
-
-
-.main .container{
-  display:
-  background-color: rgba(212, 210, 166, 0.4);
+  width: 100%;
+  margin-top: 2rem;
   display: flex;
-}
-
-.main .container nav{
-  width:100%;
-  display: inline-flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgba(204, 159, 166, 1.0);
-
-}
-
-ul{
-  display: inline-flex;
-
+  align-content: center;
+  flex-flow: row;
+  flex-wrap: nowrap;
+background-color: rgba(192, 168, 129, 0.6);
+align-self: baseline;
 
 
 }
 
-.main .container nav ul li{
-  color: rgb(0,0,0)
-  font-family: source serif pro; Helvatica;
+ .main .about{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  align-self: flex-start;
+  margin-right: 0;
+
+}
+
+.main .about .pic{
+  width: auto;
+  display: block;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+
+
+}
+
+.main .about .pic img{
+   width: 90%;
+   height: 28rem;
+
+}
+
+.main .about .career{
+  display: block;
+  width: inherit;
+  height: auto;
+  padding-top: 1.0rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+ .about h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 1.0rem;
+  text-align: left;
+
+}
+
+.about p{
   font-size: 1.5rem;
+  color: dimgrey;
+  line-height: 1.5;
+  text-align: left;
+
+
+
+}
+.about .career span{
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: left;
+
 }
 
 
+.main .information{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  align-self: flex-start;
+  padding-top: 1rem;
 
 
 
+}
+
+ .main .information .info{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   height: auto;
+    align-self: flex-start;
+
+}
+
+
+ .information .info .pic{
+  display: block;
+  width: 35%;
+  height: auto;
+  margin: 0;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+
+  }
+
+.pic img{
+  width: 100%;
+  height: auto;
+
+
+
+}
+
+ .information .info .description{
+  width: 65%;
+  display: inline-block;
+  text-align: left;
+
+}
+
+.main .information .info .description h3{
+  display: block;
+  font-size: 2rem;
+  color: black;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main .information .info .description p{
+  font-size: 1.5rem;
+  width: auto;
+  text-align: left;
+  padding-bottom: 1rem;
+
+}
+
+.main .information .info .description span{
+  display: inline;
+  font-size: 1.8rem;
+  text-align: left;
+  font-style: italic;
+ color: rgba(194, 90, 44, 0.8);
+}
+
+
+span .read{
+
+
+}
+
+
+/* start learn section */
+
+.catloges{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ flex-flow: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: rgba(192, 168, 129, 0.6);
+
+
+}
+
+ .catloges .title{
+  display: inline;
+  background-color: rgba(96, 91, 74, 0.7);
+  text-align: center;
+  width: 100%;
+
+
+
+}
+
+.catloges .title h1{
+  color: rgba(234, 242, 242, 1.0);
+  font-size: 4rem;
+  font-family: sourece serif pro;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+
+}
+
+.catloges .courses{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+padding-top: 1.5rem;
+margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  width: 100%;
+  align-self: baseline;
+
+
+}
+
+.catloges .courses .catloge{
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 30%;
+  height: 25rem;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  margin-right:2rem;
+  padding-bottom: 1.5rem;
+
+
+}
+
+
+.catloges .courses .catloge .pic{
+     display: flex;
+     width: auto;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     align-self: baseline;
+
+}
+
+
+.catloges .catloge img{
+  width: 100%;
+  height: auto;
+
+
+}
+
+.catloges .courses .catloge .summery{
+  display: inline;
+  width: auto;
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-family: source sans-serif pro;
+
+}
+
+.catloges .courses .catloge .summery h3{
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 1.0);
+
+}
+
+.catloges .courses .catloge .summery h5{
+  font-size: 2rem;
+  color: rgba(88,88,88,1.0);
+
+}
+
+  .catloges .courses .catloge .summery p{
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+    line-height: 1.0;
+    color: rgba(88,88,88,1.0);
+}
 
 
 
 /* video section */
+
+.more{
+  background-color: rgba(250, 240, 214, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.more .title{
+  display: inline;
+  width: 100%;
+  text-align: center;
+
+  }
+.more .title h1{
+  font-size: 4rem;
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.more .videos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2rem;
+
+
+}
+
+.more .videos .video{
+display: inline-flex;
+justify-content: flex-start;
+align-items: center;
+  height: auto;
+  width: 60%;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin-top: 0;
+
+}
+.more .videos video{
+  height: 35rem;
+  width: 90%;
+
+
+}
+.more .videos .video .urban{
+  display: inline-block;
+  width: inherit;
+  text-align: left;
+  margin-top: 0;
+}
+
+
+.more .videos .video .urban h3{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: source serif pro;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.more .videos .video p{
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: source serif pro;
+  padding-bottom: 1rem;
+
+}
+
+
+.more .videos .thesis{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  align-self: baseline;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem ;
+
+
+
+  }
+
+  .more .videos .thesis .fisma{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(134,129,95,0.6);
+
+
+  }
+
+.more .thesis .fisma .pic{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    width: 35%;
+    margin-right: 1rem;
+
+  }
+  .more .thesis .fisma .pic img{
+    width: 100%;
+   height: auto;
+    padding: 1rem;
+
+  }
+
+
+  .more .thesis .fisma .description{
+   display: inline-block;
+   width: 65%;
+   text-align: center;
+}
+
+.more .thesis .fisma .description h3{
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+
+
+    }
+
+  .more .thesis .fisma .description p{
+    font-size: 1.5rem;
+    color: dimgrey;
+    line-height: 1;
+
+
+
+  }
+
+
 
 
 
 
 
 /* footer section*/
+
+.foot{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.foot .copyright{
+  display: inline;
+  font-size: 1.5rem;
+  text-align: center;
+
+
+}
+
+.foot .copyright p{
+  color: white;
+  font-size: 1rem;
+  padding-left: 2.5rem;
+}
+
+
+.foot .term{
+  display: inline;
+}
+
+
+.foot ul{
+  display: inline;
+
+}
+
+.foot ul li{
+  display: inline;
+  color: white;
+  font-size: 2rem;
+  padding-right: 3rem
+
+}
