@@ -13,101 +13,108 @@ body{
   background-color: rgba(242,240,239,0.8);
   background-position: center;
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   flex-wrap: wrap;
+  height: auto;
+  align-content: center;
+
+
 
 }
 
 /* this is for header section */
 
 .headline{
-
   background-color: rgba(137, 121, 93 ,1.0);
   background-position: center;
   width: 100%;
-  height: 7rem;
-  margin: auto;
+  height: 4rem;
+  margin: 0 auto;
   position: fixed;
   display: flex;
-  justify-content: space-around;
+justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+
 
 }
 
- .headline .logo{
+.headline .logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  flex-basis: auto;
+  margin-left: 1.5rem;
+}
+
+ .headline .logos .logo{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  width: auto;
+  width: 33%;
+  margin-left: 1.5rem;
+    flex-basis: auto;
+    height: auto;
+
 
 }
-.headline .logo .svg{
-  height: 4rem;
+
+
+
+.headline .logos .logo .svg{
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 
-.headline .logo img{
+.headline .logos .logo img{
   display: flex;
   padding-left: 1.5rem;
   padding-right: 0.5rem;
-  height: 3rem;
-
-
-
-}
-
-.headline .logo span{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  color: rgba(236, 236, 236, 1.0);
-  font-family: Source Serif Pro, Helvatica;
-  font-size: 2.5rem;
-  width: auto;
-
-}
-
-
- }
-
- .headline  .ways{
-  display: flex;
-  width: auto;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-  align-self: center;
-
-}
-.headline .ways svg{
   height: 2.5rem;
-}
+  width: 2.5rem;
 
 
-.headline .ways img {
-    display: inline-flex;
-    padding-bottom: 1rem;
-    height: 3rem;
 
 
 }
 
-  .headline .ways span{
-    display: inline;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    padding-bottom: 1rem;
-    width: 7rem;
+.headline .logos .logo span{
+  display: inline;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: auto;
+  width: 70%;
 
-  }
 
-.headline .ways span a{
-    color: white;
-    font-size: 1.5rem;
-  }
+
+}
+
+
+
+.headline .logos .logo .colmar{
+ font-size: 2.0rem;
+   color: rgba(236, 236, 236, 1.0);
+     font-family: Source Serif Pro, Helvatica;
+   }
+
+.headline .logos .logo a{
+  font-size: 1.5rem;
+  font-weight: 400;
+    color: rgba(236, 236, 236, 1.0);
+      font-family: Source Serif Pro, Helvatica;
+
+}
+
+
+
+
+
+
 
 
 
@@ -116,30 +123,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 40%;
     padding-right: 1.5rem;
 
+
   }
 
-   .sign img{
+   .headline .sign img{
     display: block;
-    width: auto;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.5rem;
   }
 
- .sign span{
+ .headline .sign span{
   background-color: rgba(0, 0, 0, 0.8);
-  width: 5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-right: 15rem;
+  width: auto;
+  padding: 0.5rem 1rem;
   text-align: center;
   color: rgba(245, 245, 245, 1.0);
   font-weight: normal;
-  border-radius: 0.8;
-  border: 1px solid black;
-  font-size: 2rem;
-  line-height: 1.5;
+  border-radius: 0.5;
+  border: 2px solid black;
+
 }
 
 
@@ -148,27 +154,37 @@ body{
   color: rgba(195, 178, 76, 1.0);
 }
 
+.headline .sign span .btn{
+  font-size: 2rem;
 
-@@media only screen and (max-width: 480px) {
+}
+
+
+@media only screen and (max-width: 480px){
+
+
 
   .headline{
     height: 64px;
 
     }
 
-    .headline span{
+    .headline .logos .logo span{
       display: none;
     }
 
-    .headline .logo span{
+  .headline .logos .logo a{
       display: none;
     }
 
-    .ways span{
-      display: none;
-    }
-
+  .headline .logos .logo .colmar{
+    display: none;
 }
+}
+
+
+
+
 
 
 
@@ -178,34 +194,48 @@ body{
 
 .banner {
   background-color: beige;
+  width: 100%;
+margin-top: 1.5rem;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
-flex-direction: row;
+flex-flow: row;
 flex-wrap: nowrap;
-width: 100%;
-align-self: baseline;
+align-self: flex-start;
+
+
+
+
 }
 
  .banner .ban {
-  display: block;
-  margin-top: 9rem;
+  display: flex;
+  margin-top: 4.5rem;
   width; 60%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+
+
+
 }
 
 .banner .ban img{
   display: block;
-  width: 90%;
+  width: 95%;
   height: 30rem;
   padding: 1.5rem;
 
 }
 
- .banner  .slogan{
+ .banner .slogan{
   display: block;
-  text-align: justify;
   width: 40%;
-  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  height: inherit;
 
 }
 
@@ -216,6 +246,7 @@ align-self: baseline;
   width: auto;
 
 
+
 }
 
 
@@ -224,8 +255,9 @@ align-self: baseline;
   text-align: left;
   color: black;
   font-size: 1.5rem;
-  font-size: source pro Serif;
-  line-height: 1.8
+  font-size: source Serif pro;
+  line-height: 1.8;
+  padding-right: 1rem;
 
 
 }
@@ -245,6 +277,43 @@ align-self: baseline;
 
 }
 
+@media only screen and (max-width: 480px){
+
+  .banner{
+   flex-flow: row;
+   justify-content: center;
+     flex-wrap: wrap;
+
+
+  }
+
+  .banner .ban{
+    width: 100%;
+    display: block;
+
+
+  }
+
+  .banner .slogan {
+    width: 100%;
+    display: block;
+
+  }
+
+    .banner .slogan span{
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+    }
+
+
+
+}
+
+
+
+
+
+
 
 /* main section */
 
@@ -252,15 +321,18 @@ align-self: baseline;
 
 .main{
   width: 100%;
+  height: auto;
   margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-flow: row;
-  flex-wrap: nowrap;
-background-color: rgba(192, 168, 129, 0.6);
-align-self: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(192, 168, 129, 0.6);
+  align-self: baseline;
+  height: auto;
+
+
 
 
 }
@@ -269,11 +341,13 @@ align-self: baseline;
   width: 60%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   height: auto;
   align-self: flex-start;
-  margin-right: 0;
+  height: auto;
+
+
 
 }
 
@@ -282,6 +356,7 @@ align-self: baseline;
   display: block;
   padding-top: 2rem;
   padding-left: 1.5rem;
+  height: auto;
 
 
 }
@@ -296,8 +371,10 @@ align-self: baseline;
   display: block;
   width: inherit;
   height: auto;
+  margin-left: 1.5rem;
   padding-top: 1.0rem;
   padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
   text-align: left;
 }
 
@@ -313,7 +390,7 @@ align-self: baseline;
 .about p{
   font-size: 1.5rem;
   color: dimgrey;
-  line-height: 1.5;
+  line-height: 1.2;
   text-align: left;
 
 
@@ -336,18 +413,19 @@ align-self: baseline;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-flow: column;
   flex-wrap: nowrap;
-  height: auto;
+  height: inherit;
   align-self: flex-start;
   padding-top: 1rem;
+  flex-shrink: 1;
 
 
 
 }
 
  .main .information .info{
-   display: inline-flex;
+   display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: row;
@@ -359,7 +437,7 @@ align-self: baseline;
 }
 
 
- .information .info .pic{
+ .information .info .orientation{
   display: block;
   width: 35%;
   height: auto;
@@ -371,7 +449,31 @@ align-self: baseline;
 
   }
 
-.pic img{
+  .information .info .campus{
+   display: block;
+   width: 35%;
+   height: auto;
+   margin: 0;
+   padding-right: 1rem;
+   padding-bottom: 1rem;
+   padding-top: 1rem;
+
+
+   }
+
+   .information .info .lecture{
+    display: block;
+    width: 35%;
+    height: auto;
+    margin: 0;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+
+    }
+
+.info img{
   width: 100%;
   height: auto;
 
@@ -382,7 +484,8 @@ align-self: baseline;
  .information .info .description{
   width: 65%;
   display: inline-block;
-  text-align: left;
+  text-align: center;
+  padding-left: 1.5rem;
 
 }
 
@@ -417,6 +520,24 @@ span .read{
 
 }
 
+@media only screen and (max-width: 480px) and
+(orientation: portrait){
+
+  .main .about {
+    display: none;
+  }
+
+
+     .main .information .info{
+       flex-wrap: wrap;
+     }
+
+
+}
+
+
+
+
 
 /* start learn section */
 
@@ -424,10 +545,10 @@ span .read{
   display: flex;
   justify-content: center;
   align-items: center;
- flex-flow: column;
+ flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: rgba(192, 168, 129, 0.6);
+background-color: rgba(192, 168, 129, 0.6);
 
 
 }
@@ -454,18 +575,17 @@ span .read{
 }
 
 .catloges .courses{
-
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-padding-top: 1.5rem;
-margin-top: 1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1.5rem;
-  width: 100%;
-  align-self: baseline;
+align-self: baseline;
 
 
 }
@@ -474,27 +594,26 @@ margin-top: 1rem;
   background-color: beige;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
   height: auto;
   width: 30%;
-  height: 25rem;
+  height: 28rem;
   text-align: left;
   margin-bottom: 2.5rem;
-  margin-right:2rem;
-  padding-bottom: 1.5rem;
+  margin-right: 2rem;
+
 
 
 }
 
 
 .catloges .courses .catloge .pic{
-     display: flex;
+     display: block;
      width: auto;
-     width: 100%;
-     justify-content: center;
-     align-items: center;
+     height: auto;
+    margin: 0 auto;
      align-self: baseline;
 
 }
@@ -503,6 +622,8 @@ margin-top: 1rem;
 .catloges .catloge img{
   width: 100%;
   height: auto;
+  padding-top: 0;
+  padding-bottom: 1rem;
 
 
 }
@@ -510,6 +631,7 @@ margin-top: 1rem;
 .catloges .courses .catloge .summery{
   display: inline;
   width: auto;
+  height: auto;
   text-align: left;
   padding-top: 1rem;
   padding-left: 1rem;
@@ -533,8 +655,36 @@ margin-top: 1rem;
   .catloges .courses .catloge .summery p{
     font-size: 1.3rem;
     padding-top: 0.5rem;
-    line-height: 1.0;
+    padding-right: 1rem;
+    line-height: 1.2;
     color: rgba(88,88,88,1.0);
+}
+
+
+@media only screen and (max-width: 480px) and
+(orientation: portrait){
+  .catloges .title{
+    padding-top: 2rem;
+     padding-bottom: 1rem;
+  }
+  .catloges .courses .catloge .pic{
+    display: none;
+  }
+.catloges .courses .catloge{
+  height: auto;
+}
+
+.catloges .courses .catloge .summery h3{
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 1;
+
+}
+
 }
 
 
@@ -589,10 +739,12 @@ align-items: center;
   flex-wrap: nowrap;
   margin-top: 0;
 
+
 }
 .more .videos video{
   height: 35rem;
   width: 90%;
+  padding-top: 0;
 
 
 }
@@ -630,7 +782,7 @@ align-items: center;
   align-items: center;
   width: 40%;
   align-self: baseline;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   margin-bottom: 1rem ;
 
 
@@ -691,6 +843,22 @@ align-items: center;
 
   }
 
+  @media only screen and (max-width: 480px) and
+  (orientation: portrait){
+ .more .title{
+   padding-top: 2rem;
+   padding-bottom: 1rem;
+ }
+    .more .videos{
+      flex-wrap: wrap;
+    }
+    .more .thesis{
+      display: none;
+
+
+    }
+  }
+
 
 
 
@@ -742,4 +910,12 @@ align-items: center;
   font-size: 2rem;
   padding-right: 3rem
 
+}
+
+@media only screen and (max-width: 480px){
+  .foot{
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
