@@ -1,6 +1,14 @@
 html{
   font-size: 16px;
+
+
+
 }
+
+
+
+
+
 
 body{
   height: auto;
@@ -8,123 +16,156 @@ body{
 }
 
 
+
+
+
+
 .container{
-  background-size: cover;
+background-size: cover;
   background-color: rgba(242,240,239,0.8);
   background-position: center;
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   flex-wrap: wrap;
   height: auto;
-  align-content: center;
+  justify-content: center;
+  margin: auto;
 
 
 
 }
+
+
+
+
+
+
+
+
+
 
 /* this is for header section */
 
 .headline{
   background-color: rgba(137, 121, 93 ,1.0);
   background-position: center;
-  width: 100%;
+width: cover;
   height: 4rem;
-  margin: 0 auto;
-  position: fixed;
+  margin: 0;
   display: flex;
-justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-
-
-}
-
-.headline .logos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  flex-basis: auto;
-  margin-left: 1.5rem;
-}
-
- .headline .logos .logo{
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
   flex-wrap: nowrap;
-  width: 33%;
-  margin-left: 1.5rem;
-    flex-basis: auto;
-    height: auto;
-
-
 }
 
-
-
-.headline .logos .logo .svg{
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-
-.headline .logos .logo img{
+.headline .logo{
   display: flex;
-  padding-left: 1.5rem;
+  width: 34%;
+  margin-left: 0;
+  justify-content: flex-start;
+  flex-flow: row;
+  flex-wrap: nowrap;
+
+}
+
+
+ .headline .folk, .headline .folks, .headline .sign{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-flow: row;
+ flex-wrap: nowrap;
+ width: 22%;
+
+
+}
+
+.headline .logo .pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  width: 3rem;
+  height: 3rem;
+
+}
+
+
+.headline .logo .pic img{
+
+padding-left: 1.5rem;
   padding-right: 0.5rem;
-  height: 2.5rem;
+  height: 3rem;
   width: 2.5rem;
 
 
-
-
 }
 
-.headline .logos .logo span{
-  display: inline;
-  flex-wrap: nowrap;
-  justify-content: center;
-  height: auto;
-  width: 70%;
 
-
+.headline .logo span{
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 22rem;
 
 }
 
 
-
-.headline .logos .logo .colmar{
- font-size: 2.0rem;
+.headline .logo .colmar{
+    font-size: 2rem;
    color: rgba(236, 236, 236, 1.0);
      font-family: Source Serif Pro, Helvatica;
    }
 
-.headline .logos .logo a{
-  font-size: 1.5rem;
+
+
+
+
+.headline .folk, .folks, .sign img{
+     display: flex;
+     padding-left: 1.5rem;
+     padding-right: 0.5rem;
+     height: 3rem;
+     width: 2.5rem;
+   }
+
+
+
+
+
+ .folk .online a{
+  font-size: 1rem;
   font-weight: 400;
     color: rgba(236, 236, 236, 1.0);
       font-family: Source Serif Pro, Helvatica;
+      text-decoration: none;
 
+}
+
+
+.folkls span .campus{
+  display: flex;
+
+}
+
+ .folks .campus a{
+   display: flex;
+   width: 6rem;
+  font-size: 1rem;
+  font-weight: 400;
+    color: rgba(236, 236, 236, 1.0);
+      font-family: Source Serif Pro, Helvatica;
+      text-decoration: none;
 }
 
 
 
 
 
+.headline .sign{
 
-
-
-
-
- .headline .sign{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    padding-right: 1.5rem;
+    margin-right: 1.5rem;
 
 
   }
@@ -132,7 +173,7 @@ justify-content: space-between;
    .headline .sign img{
     display: block;
     width: 2rem;
-    height: 2rem;
+    height: 3rem;
     padding-right: 0.5rem;
   }
 
@@ -142,45 +183,29 @@ justify-content: space-between;
   padding: 0.5rem 1rem;
   text-align: center;
   color: rgba(245, 245, 245, 1.0);
-  font-weight: normal;
-  border-radius: 0.5;
-  border: 2px solid black;
+
+  border-radius: 0.6;
+  border: 1px solid white;
 
 }
 
 
 
 .sign span:hover {
-  color: rgba(195, 178, 76, 1.0);
+  color:  rgba(135, 200, 44, 0.8);
 }
 
-.headline .sign span .btn{
-  font-size: 2rem;
+.headline .sign .btn{
+  font-size: 1.5rem;
+  font-family: source serif pro;
+  font-weight: lighter;
+
 
 }
 
 
-@media only screen and (max-width: 480px){
 
 
-
-  .headline{
-    height: 64px;
-
-    }
-
-    .headline .logos .logo span{
-      display: none;
-    }
-
-  .headline .logos .logo a{
-      display: none;
-    }
-
-  .headline .logos .logo .colmar{
-    display: none;
-}
-}
 
 
 
@@ -195,13 +220,15 @@ justify-content: space-between;
 .banner {
   background-color: beige;
   width: 100%;
-margin-top: 1.5rem;
+margin-top: 0;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: row;
 flex-wrap: nowrap;
 align-self: flex-start;
+padding-top: 1rem;
+padding-bottom: 1rem;
 
 
 
@@ -210,13 +237,11 @@ align-self: flex-start;
 
  .banner .ban {
   display: flex;
-  margin-top: 4.5rem;
+  margin: 1.5rem 0.5rem 1.5rem 1.5rem;
   width; 60%;
-  height: auto;
+  height: 30rem;
   justify-content: center;
   align-items: center;
-
-
 
 
 }
@@ -225,14 +250,14 @@ align-self: flex-start;
   display: block;
   width: 95%;
   height: 30rem;
-  padding: 1.5rem;
+
 
 }
 
  .banner .slogan{
   display: block;
   width: 40%;
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
   margin-top: 1.5rem;
   text-align: center;
   height: inherit;
@@ -241,7 +266,7 @@ align-self: flex-start;
 
  .banner .slogan h1{
   text-align: left;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: black;
   width: auto;
 
@@ -256,7 +281,7 @@ align-self: flex-start;
   color: black;
   font-size: 1.5rem;
   font-size: source Serif pro;
-  line-height: 1.8;
+  line-height: 1.4;
   padding-right: 1rem;
 
 
@@ -271,43 +296,13 @@ align-self: flex-start;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: source serif pro;
 
 }
 
-@media only screen and (max-width: 480px){
 
-  .banner{
-   flex-flow: row;
-   justify-content: center;
-     flex-wrap: wrap;
-
-
-  }
-
-  .banner .ban{
-    width: 100%;
-    display: block;
-
-
-  }
-
-  .banner .slogan {
-    width: 100%;
-    display: block;
-
-  }
-
-    .banner .slogan span{
-      padding-top: 1.5rem;
-      padding-bottom: 2rem;
-    }
-
-
-
-}
 
 
 
@@ -322,15 +317,18 @@ align-self: flex-start;
 .main{
   width: 100%;
   height: auto;
-  margin-top: 2rem;
-  display: flex;
+  margin-top: 0;
+ display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: rgba(192, 168, 129, 0.6);
   align-self: baseline;
   height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
 
 
 
@@ -346,6 +344,8 @@ align-self: flex-start;
   height: auto;
   align-self: flex-start;
   height: auto;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
 
 
 
@@ -355,14 +355,14 @@ align-self: flex-start;
   width: auto;
   display: block;
   padding-top: 2rem;
-  padding-left: 1.5rem;
+padding-left: 1rem;
   height: auto;
 
 
 }
 
 .main .about .pic img{
-   width: 90%;
+   width: 95%;
    height: 28rem;
 
 }
@@ -371,6 +371,7 @@ align-self: flex-start;
   display: block;
   width: inherit;
   height: auto;
+  width: 90%;
   margin-left: 1.5rem;
   padding-top: 1.0rem;
   padding-bottom: 0.5rem;
@@ -379,7 +380,7 @@ align-self: flex-start;
 }
 
  .about h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: black;
   padding-bottom: 1.0rem;
@@ -407,6 +408,11 @@ align-self: flex-start;
 
 }
 
+.about .career a{
+  color: rgba(194, 90, 44, 0.8);
+  text-decoration: none;
+}
+
 
 .main .information{
   width: 40%;
@@ -426,13 +432,14 @@ align-self: flex-start;
 
  .main .information .info{
    display: flex;
-   justify-content: center;
-   align-items: center;
+   justify-content: flex-start;
+   align-items: flex-start;
    flex-direction: row;
    flex-wrap: nowrap;
    width: 100%;
    height: auto;
     align-self: flex-start;
+    margin-bottom: 2rem;
 
 }
 
@@ -442,7 +449,6 @@ align-self: flex-start;
   width: 35%;
   height: auto;
   margin: 0;
-  padding-right: 1rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
 
@@ -454,8 +460,7 @@ align-self: flex-start;
    width: 35%;
    height: auto;
    margin: 0;
-   padding-right: 1rem;
-   padding-bottom: 1rem;
+  padding-bottom: 1rem;
    padding-top: 1rem;
 
 
@@ -466,14 +471,13 @@ align-self: flex-start;
     width: 35%;
     height: auto;
     margin: 0;
-    padding-right: 1rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
 
 
     }
 
-.info img{
+.information .info img{
   width: 100%;
   height: auto;
 
@@ -484,58 +488,39 @@ align-self: flex-start;
  .information .info .description{
   width: 65%;
   display: inline-block;
-  text-align: center;
-  padding-left: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
 
 }
 
 .main .information .info .description h3{
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   text-align: left;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-weight: bold;
 }
 
 .main .information .info .description p{
   font-size: 1.5rem;
-  width: auto;
+  width: 93%;
   text-align: left;
   padding-bottom: 1rem;
+  padding-right: 1rem;
 
 }
 
 .main .information .info .description span{
   display: inline;
   font-size: 1.8rem;
+  text-decoration: none;
   text-align: left;
   font-style: italic;
  color: rgba(194, 90, 44, 0.8);
 }
-
-
-span .read{
-
-
-}
-
-@media only screen and (max-width: 480px) and
-(orientation: portrait){
-
-  .main .about {
-    display: none;
-  }
-
-
-     .main .information .info{
-       flex-wrap: wrap;
-     }
-
-
-}
-
-
 
 
 
@@ -545,10 +530,11 @@ span .read{
   display: flex;
   justify-content: center;
   align-items: center;
- flex-direction: column;
+ flex-direction: column ;
   flex-wrap: nowrap;
   width: 100%;
 background-color: rgba(192, 168, 129, 0.6);
+padding-top: 1rem;
 
 
 }
@@ -585,6 +571,7 @@ background-color: rgba(192, 168, 129, 0.6);
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1.5rem;
+  padding-top: 1.5rem;
 align-self: baseline;
 
 
@@ -597,9 +584,8 @@ align-self: baseline;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  height: auto;
   width: 30%;
-  height: 28rem;
+  height: 35rem;
   text-align: left;
   margin-bottom: 2.5rem;
   margin-right: 2rem;
@@ -621,7 +607,7 @@ align-self: baseline;
 
 .catloges .catloge img{
   width: 100%;
-  height: auto;
+  height: 15rem;
   padding-top: 0;
   padding-bottom: 1rem;
 
@@ -629,20 +615,21 @@ align-self: baseline;
 }
 
 .catloges .courses .catloge .summery{
-  display: inline;
-  width: auto;
+  display: inline-block;
+  width: 100%;
   height: auto;
   text-align: left;
-  padding-top: 1rem;
   padding-left: 1rem;
   font-family: source sans-serif pro;
+  line-height: normal;
 
 }
 
 .catloges .courses .catloge .summery h3{
-  font-size: 2.5rem;
-  padding-bottom: 0.5rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 1.0);
+  line-height: 1;
+  font-weight: bold;
 
 }
 
@@ -654,38 +641,12 @@ align-self: baseline;
 
   .catloges .courses .catloge .summery p{
     font-size: 1.3rem;
-    padding-top: 0.5rem;
     padding-right: 1rem;
-    line-height: 1.2;
     color: rgba(88,88,88,1.0);
 }
 
 
-@media only screen and (max-width: 480px) and
-(orientation: portrait){
-  .catloges .title{
-    padding-top: 2rem;
-     padding-bottom: 1rem;
-  }
-  .catloges .courses .catloge .pic{
-    display: none;
-  }
-.catloges .courses .catloge{
-  height: auto;
-}
 
-.catloges .courses .catloge .summery h3{
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  height: auto;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-  line-height: 1;
-
-}
-
-}
 
 
 
@@ -695,8 +656,7 @@ align-self: baseline;
   background-color: rgba(250, 240, 214, 0.7);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  align-content: center;
+  align-items: center;
   flex-flow: column;
   flex-wrap: nowrap;
   margin: 0 auto;
@@ -708,6 +668,7 @@ align-self: baseline;
   display: inline;
   width: 100%;
   text-align: center;
+  margin-bottom: 0;
 
   }
 .more .title h1{
@@ -719,40 +680,48 @@ align-self: baseline;
 
 .more .videos{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-flow: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
+  margin-top: 0;
   margin-bottom: 2rem;
+  align-self: baseline;
 
 
 }
 
 .more .videos .video{
-display: inline-flex;
-justify-content: flex-start;
-align-items: center;
-  height: auto;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+height: 40rem;
   width: 60%;
   flex-flow: column;
   flex-wrap: nowrap;
-  margin-top: 0;
+   margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    align-self: flex-start;
 
 
 }
-.more .videos video{
-  height: 35rem;
-  width: 90%;
+.more .videos .video video{
+  display: block;
+
+width: 90%;
+height: auto;
   padding-top: 0;
 
 
 }
 .more .videos .video .urban{
   display: inline-block;
-  width: inherit;
+  width: 85%;
   text-align: left;
-  margin-top: 0;
+  padding-top: 1rem;
+  padding-right: 1rem;
+
 }
 
 
@@ -760,16 +729,20 @@ align-items: center;
   font-size: 2rem;
   font-weight: bold;
   font-family: source serif pro;
-  padding-top: 1rem;
+  padding-top: 0;
   padding-bottom: 1rem;
+  line-height: 2;
+
 
 }
 
 .more .videos .video p{
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: 1.5;
   font-family: source serif pro;
   padding-bottom: 1rem;
+
+
 
 }
 
@@ -782,12 +755,10 @@ align-items: center;
   align-items: center;
   width: 40%;
   align-self: baseline;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem ;
 
-
-
-  }
+}
 
   .more .videos .thesis .fisma{
     width: 100%;
@@ -813,7 +784,7 @@ align-items: center;
 
   }
   .more .thesis .fisma .pic img{
-    width: 100%;
+    width: 98%;
    height: auto;
     padding: 1rem;
 
@@ -823,21 +794,24 @@ align-items: center;
   .more .thesis .fisma .description{
    display: inline-block;
    width: 65%;
-   text-align: center;
+   text-align: left;
+   padding-left: 1rem;
+   padding-right: 1rem;
 }
 
 .more .thesis .fisma .description h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
-  text-align: center;
+  text-align: left;
 
 
     }
 
   .more .thesis .fisma .description p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: dimgrey;
-    line-height: 1;
+    line-height: 1.2;
+    text-align: left;
 
 
 
