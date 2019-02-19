@@ -131,7 +131,9 @@ padding-left: 1.5rem;
    }
 
 
-
+.folk span{
+  display: flex;
+}
 
 
  .folk .online a{
@@ -144,10 +146,11 @@ padding-left: 1.5rem;
 }
 
 
-.folkls span .campus{
-  display: flex;
+.folks span{
+   display: flex;
 
 }
+
 
  .folks .campus a{
    display: flex;
@@ -269,6 +272,8 @@ padding-bottom: 1rem;
   font-size: 2.5rem;
   color: black;
   width: auto;
+  line-height: 1.5;
+  font-weight: bold;
 
 
 
@@ -381,17 +386,20 @@ padding-left: 1rem;
 
  .about h1{
   font-size: 2rem;
+  line-height: 1.5rem;
   font-weight: bold;
   color: black;
   padding-bottom: 1.0rem;
   text-align: left;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
 }
 
 .about p{
   font-size: 1.5rem;
-  color: dimgrey;
-  line-height: 1.2;
+  color: black;
+  line-height: 1.5;
   text-align: left;
 
 
@@ -424,7 +432,7 @@ padding-left: 1rem;
   height: inherit;
   align-self: flex-start;
   padding-top: 1rem;
-  flex-shrink: 1;
+
 
 
 
@@ -491,6 +499,7 @@ padding-left: 1rem;
   text-align: left;
   padding-left: 1rem;
   padding-top: 1rem;
+  line-height: 1.5;
 
 }
 
@@ -510,6 +519,7 @@ padding-left: 1rem;
   text-align: left;
   padding-bottom: 1rem;
   padding-right: 1rem;
+
 
 }
 
@@ -619,7 +629,7 @@ align-self: baseline;
   width: 100%;
   height: auto;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 2rem;
   font-family: source sans-serif pro;
   line-height: normal;
 
@@ -630,12 +640,15 @@ align-self: baseline;
   color: rgba(0, 0, 0, 1.0);
   line-height: 1;
   font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 
 }
 
 .catloges .courses .catloge .summery h5{
   font-size: 2rem;
   color: rgba(88,88,88,1.0);
+  padding-bottom: 2rem;
 
 }
 
@@ -643,6 +656,7 @@ align-self: baseline;
     font-size: 1.3rem;
     padding-right: 1rem;
     color: rgba(88,88,88,1.0);
+    line-height: 1.5;
 }
 
 
@@ -690,6 +704,7 @@ align-self: baseline;
   align-self: baseline;
 
 
+
 }
 
 .more .videos .video{
@@ -705,13 +720,15 @@ height: 40rem;
     align-self: flex-start;
 
 
+
 }
 .more .videos .video video{
   display: block;
-
-width: 90%;
-height: auto;
+  width: 90%;
+  height: auto;
   padding-top: 0;
+  padding-left: 1.5rem;
+
 
 
 }
@@ -721,6 +738,7 @@ height: auto;
   text-align: left;
   padding-top: 1rem;
   padding-right: 1rem;
+  padding-left: 2rem;
 
 }
 
@@ -741,7 +759,7 @@ height: auto;
   line-height: 1.5;
   font-family: source serif pro;
   padding-bottom: 1rem;
-
+  color: rgba(72,73,73,1);
 
 
 }
@@ -800,38 +818,23 @@ height: auto;
 }
 
 .more .thesis .fisma .description h3{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
   text-align: left;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
 
 
     }
 
   .more .thesis .fisma .description p{
-    font-size: 1.2rem;
-    color: dimgrey;
-    line-height: 1.2;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 1.5;
     text-align: left;
 
 
-
-  }
-
-  @media only screen and (max-width: 480px) and
-  (orientation: portrait){
- .more .title{
-   padding-top: 2rem;
-   padding-bottom: 1rem;
- }
-    .more .videos{
-      flex-wrap: wrap;
-    }
-    .more .thesis{
-      display: none;
-
-
-    }
-  }
+}
 
 
 
@@ -884,12 +887,4 @@ height: auto;
   font-size: 2rem;
   padding-right: 3rem
 
-}
-
-@media only screen and (max-width: 480px){
-  .foot{
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
 }
